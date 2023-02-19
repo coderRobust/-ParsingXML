@@ -13,7 +13,7 @@ def xml_data_parsing():
   final_data = {}
   parsed_message =None
   try:
-      with open("C:\\Users\\AshutoshT\\Desktop\\PARSINGXML\\sample_customer_data.xml", "r", encoding='utf-8') as file_obj:
+      with open("\PARSINGXML\\sample_customer_data.xml", "r", encoding='utf-8') as file_obj:
           data = file_obj.read()
           parsed_message = xmltodict.parse(data, process_namespaces=True, namespaces=namespaces)
   except Exception as e :
